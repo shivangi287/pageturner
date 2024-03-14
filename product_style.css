@@ -1,0 +1,383 @@
+/* Resetting default body margin and setting background color */
+body {
+    
+    background-color: #FFFCF2;   
+}
+
+/* Styling for the navigation bar */
+.navbar {
+    display: flex;
+    background-color: #CCC5B9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+/* Styling for the search box */
+.searchBox {
+    background: #403D39;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+    background: white;
+    color: #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #403D39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+
+/* body section  */
+.section-body{
+    
+    padding-top: 30px;
+    padding-left: 15px;
+    height:3500px;
+}
+.section-body h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* styling for the vertical navigation menu */
+.vertical-nav
+{
+    padding-top: 100px;
+}
+
+
+.section-body ul {
+    list-style-type: none;
+    width: 20%;
+    background-color: #CCC5B9;
+    position: fixed;
+    height: auto;
+    overflow: auto;
+    padding: 20px;
+  }
+  
+  .section-body  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .section-body li a.active {
+    background-color: #EB5E28;
+    color: white;
+  }
+  
+  .section-body li a:hover:not(.active) {
+    background-color: #EB5E28;
+    color: white;
+  }
+
+/* section-2 */
+  .image-holder{
+    border: 1px solid #ccc;
+    transition-duration:200ms;
+    transition-timing-function: ease-out;
+  }
+  
+  .image-holder:hover {
+    border: 3px solid #777;
+    transform: scale(1.05,1.05);
+  }
+  
+.gallery{
+    
+    display: flex;
+    flex-direction: row; 
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding-bottom: 20px;
+}
+
+div.desc {
+    text-align: center;
+    width: 100%;
+ }
+
+ .desc i{
+    float: left !important;
+    padding-left: 10px;
+ }
+
+ .desc button {
+    float: right !important;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-color: #CCC5B9;
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+}
+
+.gallery img{
+    height: 250px;
+    width:200px;
+}
+.gallery-main h2 {
+padding-bottom: 20px;
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 150px;
+    color: white;
+    font-family: 'fantasy', papyrus;
+    margin: 30px 30px 0px 0px;
+    padding: 20px 20px 0px 0px;
+}
+
+.btn {
+    display: block;
+    border-radius: 30px;
+    color: black;
+    background-color: #CCC5B9;
+    font-size: 20px;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px 20px;
+    font-family: sans-serif;
+}
+
+.btn:hover {
+    background-color: #EB5E28;
+    color:white;
+}
+
+/*styling for the footer*/
+footer li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+}
+
+footer li a {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+footer li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+footer li a:hover {
+    background-color: #EB5E28;
+    color:white;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.navbar li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+}
+
+.navbar li a {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.navbar li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li a:hover {
+    background-color: #EB5E28;
+    color:white;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+
+
+*{
+    margin: 0; padding: 0;
+    border: 0; outline: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --theme-col: #2d4bf0;
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+footer{
+    background-color: #CCC5B9;
+}
+.f-item-con{
+    padding: 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+}
+footer .app-name{
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+.app-name .app-initial{
+    color: var(--theme-col);
+}
+footer .app-info p{
+    color: black;
+    padding-left: 1.65rem;
+}
+
+footer .footer-title{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: black;
+    
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+footer ul{ 
+    padding-left: 1.75rem;
+    color: black;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem;
+    margin-top: .5rem;
+}
+footer ul li{ 
+    margin: .25rem 0;
+    cursor: pointer;
+    color: gray;
+    width: fit-content;
+}
+footer ul li:hover{
+    color: black;
+}
+footer .help-sec{
+    grid-column-start: 2;
+}
+footer .cr-con{
+    background-color: #403D39;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+/*styling for the get in touch*/
+.g-i-t{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.g-i-t form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+form .g-inp {
+    padding: 0.25rem 0.5rem;
+    font-size: 16px;
+    background-color: #FFFCF2;
+    border-radius: 5px;
+}
+
+.g-inp textarea{
+    height: 150px;
+}
+.f-btn{
+    padding: .25rem 1rem;
+    background-color:#EB5E28;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+/* CSS for error messages */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* CSS for highlighting invalid input fields */
+input.invalid,
+textarea.invalid {
+    border: 1px solid red;
+}
+
