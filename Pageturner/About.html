@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+</head>
+<body>
+<style>
+
+/*styling for the body*/
+body {
+    margin: 0;
+    background-color: #FFFCF2;
+}
+
+/*styling for the navigation bar*/
+.navbar {
+    display: flex;
+    background-color: #CCC5B9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+/*styling for the search box*/
+.searchBox {
+    background: #403D39;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+    background: white;
+    color: #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #403D39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+/*styling for the section1*/
+.section-1 {
+    padding: 40px;
+    background-image: url("bgimage.jpeg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+    height: 550px;
+    
+}
+
+.Section-1-text {
+    display: block;
+    border: black;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+    font-family: 'fantasy', papyrus;
+    margin: 30px 30px 0px 0px;
+    padding: 20px 20px 0px 0px;
+}
+
+
+.section-1 p {
+    font-size: 30px;
+    color: white;
+    padding: 0px 0px 20px 20px;
+    margin: 0px 0px 20px 20px;
+}
+.section-2 {
+    padding: 35px;
+}
+
+h2{  
+  font-family: sans-serif;
+    font-size: xx-large;
+    background-color: #CCC5B9;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+.gallery div {
+    display: inline !important;
+}
+
+.section-2 a {
+    text-decoration: none;
+}
+
+div.gallery image-holder desc {
+    text-align: center;
+}
+
+img {
+    height: 300px;
+    width: 230px;
+    padding: 20px;
+}
+.gallery {
+padding: 30px;
+}
+
+.btn {
+    display: block;
+    border-radius: 30px;
+    color: black;
+    background-color: #CCC5B9;
+    font-size: 20px;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px 20px;
+    font-family: sans-serif;
+}
+
+.btn:hover {
+    background-color: #EB5E28;
+    color:white;
+}
+
+li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+}
+
+li a {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a:hover {
+    background-color: #EB5E28;
+    color:white;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+*{
+    margin: 0; padding: 0;
+    border: 0; outline: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --theme-col: #2d4bf0;
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+/*styling for the footer*/
+footer{
+    background-color: #CCC5B9;
+}
+.f-item-con{
+    padding: 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+}
+footer .app-name{
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+.app-name .app-initial{
+    color: var(--theme-col);
+}
+footer .app-info p{
+    color: black;
+    padding-left: 1.65rem;
+}
+
+footer .footer-title{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: black;
+    
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+footer ul{ 
+    padding-left: 1.75rem;
+    color: black;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem;
+    margin-top: .5rem;
+}
+footer ul li{ 
+    margin: .25rem 0;
+    cursor: pointer;
+    color: black;
+    width: fit-content;
+}
+footer ul li:hover{
+    color: black;
+}
+footer .help-sec{
+    grid-column-start: 2;
+}
+footer .cr-con{
+    background-color: #403D39;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+.g-i-t{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.g-i-t form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+form .g-inp {
+    padding: 0.25rem 0.5rem;
+    font-size: 16px;
+    background-color: #FFFCF2;
+    border-radius: 5px;
+}
+
+.g-inp textarea{
+    height: 150px;
+}
+.f-btn{
+    padding: .25rem 1rem;
+    background-color:#EB5E28;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 620px) {
+    .searchBox:hover > .searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 300px;
+  height: 650px;
+}
+
+/*styling for the about section*/
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #403D39;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border-radius: 20px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #403D39;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #EB5E28;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* CSS for error messages */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* CSS for highlighting invalid input fields */
+input.invalid,
+textarea.invalid {
+    border: 1px solid red;
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-left">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+	    <li><a href="products.html">Product</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Register.html">Create account</a></li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <div class="searchBox">
+            <input type="text" class="searchInput" placeholder="Search..">
+            <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="about-section">
+  <h1>About Us </h1>
+  <p>Welcome to PAGETURNER, where we're passionate about simplifying the book-shopping experience. Our online platform offers a vast selection of books, from bestsellers to niche titles, all accessible from the comfort of your home. With PAGETURNER, the adventure begins with a click of a button. <br>For any query leave a comment in the Home page comment section. You can also send us email and call us on Week days.</br>
+  </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row" style="padding-left:175px;">
+  <div class="column">
+    <div class="card">
+      <center><img src="./about/about1.jpeg" alt="Jane" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Jeevin</h2>
+        <p class="title">CEO & Founder</p>
+        <p>“Be yourself; everyone else is already taken.”</p>
+        <p style="padding-bottom: 20px;">Jeevin@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <center><img src="./about/about2.jpeg" alt="Jane" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Megan</h2>
+        <p class="title">Art Director</p>
+        <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
+        <p style = "padding-bottom : 20px;">Abc@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <center><img src="./about/about3.jpeg" alt="Jane" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Josh</h2>
+        <p class="title">Designer</p>
+        <p>“A room without books is like a body without a soul.”</p>
+        <p style = "padding-bottom : 20px;">xyz@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <!-- Footer content -->
+    <div class="f-item-con">
+        <!-- App info -->
+        <div class="app-info">
+            <h3 style="padding: 20px; font-size: 60px;"> PageTurner </h3>
+            <p>Explore the world between pages!</p>
+        </div>
+        <!-- Useful links -->
+        <div class="useful-links">
+            <div class="footer-title">Useful Links</div>
+            <ul>
+                <li><a href="Register.html">Sign In</a></li>
+                <li><a href="About.html">About Us</a></li>
+            </ul>
+        </div>
+        <!-- Help section -->
+        <div class="help-sec">
+            <div class="footer-title">Help</div>
+            <ul>
+                <li>Help Me</li>
+                <li>Feedback</li>
+                <li>Report a Issue / Bug</li>
+            </ul>
+        </div>
+        <!-- Get in touch section -->
+<div class="g-i-t">
+    <div class="footer-title">Get in Touch</div>
+    <form action="index.html" method="post" class="space-y-2" onsubmit="return validateForm()">
+        <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Name' />
+        <span id="nameError" class="error"></span> <!-- Error message container for name -->
+        
+        <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' />
+        <span id="emailError" class="error"></span> <!-- Error message container for email -->
+        
+        <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg" placeholder='Message...'></textarea>
+        <span id="msgError" class="error"></span> <!-- Error message container for message -->
+        
+        <button type="submit" class='f-btn'>Submit</button>
+
+    </form>
+    </div>
+</div>
+ <!-- Copyright -->
+ <div class='cr-con'>Copyright &copy; 2024</div>
+</footer>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById("g-name").value;
+        var email = document.getElementById("g-email").value;
+        var msg = document.getElementById("g-msg").value;
+        var isValid = true;
+
+        // Validate name
+        if (name.trim() == "") {
+            document.getElementById("nameError").innerHTML = "Please enter your name";
+            isValid = false;
+        } else {
+            document.getElementById("nameError").innerHTML = "";
+        }
+
+        // Validate email
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.match(emailPattern)) {
+            document.getElementById("emailError").innerHTML = "Please enter a valid email address";
+            isValid = false;
+        } else {
+            document.getElementById("emailError").innerHTML = "";
+        }
+
+        // Validate message
+        if (msg.trim() == "") {
+            document.getElementById("msgError").innerHTML = "Please enter your message";
+            isValid = false;
+        } else {
+            document.getElementById("msgError").innerHTML = "";
+        }
+
+        return isValid;
+    }
+</script>
+   
+
+
+</body>
+</html>
